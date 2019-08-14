@@ -1,5 +1,5 @@
-ARG arch=armhf-edge
-FROM multiarch/alpine:${arch}-v3.8
+ARG arch=armhf
+FROM multiarch/alpine:${arch}-v3.9
 RUN cat /etc/apk/arch 
 RUN apk add --no-cache curl jq
 
